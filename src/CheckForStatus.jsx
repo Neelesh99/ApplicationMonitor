@@ -13,5 +13,9 @@ class CheckForStatus{
         return (this.hasTalNet(data) || this.hasApplyTo(data))
     }
 
+    static checkOpen(data){
+        return !data.includes("Notify me")
+    }
+
 }
 export default CheckForStatus;

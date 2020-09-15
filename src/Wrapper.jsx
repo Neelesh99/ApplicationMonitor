@@ -128,7 +128,7 @@ class Wrapper extends Component{
 
     handleFetchOp(url){
         return FetchWebPage.getValue(url).then(
-            (data) => {return CheckForStatus.checkAll(data)}
+            (data) => {return CheckForStatus.checkOpen(data)}
         )
     }
 }
